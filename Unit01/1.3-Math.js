@@ -9,6 +9,14 @@ console.log(fahrenheit);
 fahrenheit = 77;
 celcius = (fahrenheit - 32) * 5/9;
 console.log(celcius);
-console.log("77 degrees Fahrenheit is",celcius,"degrees celcius.");
 
 //part 3
+console.log("77 degrees Fahrenheit is",celcius,"degrees celcius.");
+
+//Last Part
+x1 = -4;
+y1 = 5;
+x2 = 6;
+y2 = 0;
+m = (y2 - y1)/(x2 - x1);
+console.log("The slope is equal to",m);
