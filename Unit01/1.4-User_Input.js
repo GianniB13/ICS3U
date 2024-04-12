@@ -25,4 +25,4 @@ let tempCelsius = (tempFahrenheit - 32) * 5/9;
 console.log(`${tempFahrenheit}F is equal to ${tempCelsius.toFixed(2)}C.`);
 
 // what else it can be used for
-console.log("The prompt function can be used for many different tasks such as generating texts based on inputs, answering questions, and even simulating conversations. ");
+console.log("The prompt function can be used for many different tasks such as generating texts based on inputs, answering questions, and even having conversations. ");
