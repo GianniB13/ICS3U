@@ -36,14 +36,11 @@ let nameLength = parseInt(prompt("How long is your name? "));
 
 // Checks on entered name length
 if (nameLength === userName.length) {
-    console.log("That's correct! ✔️");
+    console.log("That's correct! ");
 } 
 else if (nameLength > userName.length) {
-    console.log("Too high ✖️");
+    console.log("Too high ");
 } 
 else {
-    console.log("Too low ✖️");
+    console.log("Too low ");
 }
-
-
-
