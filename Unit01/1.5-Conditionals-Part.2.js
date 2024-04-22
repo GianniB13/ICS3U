@@ -1,4 +1,4 @@
-// Part 2 
+// Part 2
 const prompt = require('prompt-sync')();
 
 // What is your name?
