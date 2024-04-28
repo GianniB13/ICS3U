@@ -32,9 +32,9 @@ function area_label(r, h) {
 function area_cylinder(r, h) {
     let circleArea = area_circle(r);
     let labelArea = area_label(r, h);
-    return 2 * circleArea + labelArea;
+    return circleArea + labelArea;
 }
-let radius = 5;
+let radius = 2;
 let height = 10;
 
 console.log("Area of circle with radius"+radius+"is"+area_circle(radius)+". ");
@@ -43,16 +43,12 @@ console.log("Surface area of cylinder with radius"+radius+"and height"+height+"i
 
 //Creepy Ghosts Task
 function ghost_watch(polter, wolter) {
-    if ((polter == "laughing" && wolter == "laughing") || (polter == "angry" && wolter == "angry")) {
+//13 = laughing, 7 = angry, 1 = neutral.
+    if ((polter == "13" && wolter == "13") || (polter == "7" && wolter == "7")) {
         return true;
     } else {
         return false;
     }
 }
-let polterMood = "neutral";
-let wolterMood = "angry";
-if (ghost_watch(polterMood, wolterMood)) {
-    console.log("Lockdown mode is on.");
-} else {
-    console.log("Ghosts are neutral, everthing is fine.");
-}
+console.log(ghost_watch(13,1))
+console.log(ghost_watch(7,7))
