@@ -10,16 +10,7 @@ function calculateSum() {
 let result = calculateSum();
 console.log("The sum is:", result); //output should be 15.
 
-// Incorrect scope 
-let num1 = 5; 
-let num2 = 10; 
-
-function calculateSum() {
-    return num1 + num2; 
-}
-
-let resultt = calculateSum();
-console.log("The sum is:", resultt); 
+// For the scope to be incorrect the let statements would be outside of the function therefore running the code would not work.
 
 //Operation Plumber
 console.log(hotWater());
