@@ -13,17 +13,16 @@ console.log("The sum is:", result); //output should be 15.
 // For the scope to be incorrect the let statements would be outside of the function therefore running the code would not work.
 
 //Operation Plumber
-console.log(hotWater());
+let waterTemp = "cold";
 
 function hotWater() {
-  let waterTemp = "cold";
   if (waterBoilerSwitch() == false){
-    waterBoilerSwitch(waterTemp);
+    waterBoilerSwitch();
   }
   return waterTemp;
 }
 
-function waterBoilerSwitch(waterTemp){
+function waterBoilerSwitch(){
   if (waterTemp == "cold") {
     waterTemp = "hot";
     return true;
@@ -32,3 +31,4 @@ function waterBoilerSwitch(waterTemp){
     return false;
   }
 }
+console.log(hotWater())
