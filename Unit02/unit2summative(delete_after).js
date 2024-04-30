@@ -26,31 +26,27 @@ console.log(discriminant(10, 20, 30));
 // Convert military time to standard time
 // H is hour and M is minute
 function military_to_standard(hour, minute) {
-    let standardH = hour;
     if (hour == 0) {
-        standardH = 12;
-    } else if (hour >= 13) {
-        standardH = hour - 12;
+        hour = 12;
+    } else if (hour > 12) {
+        hour = hour - 12;
     }
-    let standardM = minute;
     if (minute < 10) {
-        standardM = "0" + minute;
+        minute = "0" + minute;
     }
     let TOD;
-    if (hour < 12 || hour == 24) {
+    if (hour < 12) {
         TOD = "AM";
+    } else if (hour == 12) {
+        TOD = "PM";
     } else {
         TOD = "PM";
     }
-    return standardH + ":" + standardM + " " + TOD;
+    return hour + ":" + minute + " " + TOD;
 }
-console.log(military_to_standard(0, 30));   // Output is 12:30 AM
-console.log(military_to_standard(11, 45));  // Output is 11:45 AM
-console.log(military_to_standard(12, 8));   // Output is 12:08 PM
-console.log(military_to_standard(14, 37));  // Output is 2:37 PM
-console.log(military_to_standard(18, 0));   // Output is 6:00 PM
-console.log(military_to_standard(23, 59));  // Output is 11:59 PM
-console.log(military_to_standard(0, 0));    // Output is 12:00 AM
+
+console.log(military_to_standard(13, 50)); 
+
 
   
 // Start a game of Evens vs. Odds
