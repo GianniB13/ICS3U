@@ -79,7 +79,7 @@ function game() {
     if (humanScore < 3 && computerScore < 3) {
         game();
     } else {
-        console.log(humanScore === 3 && "You win!" || "The Computer wins!");
+        console.log(humanScore == 3 && "You win!" || "The Computer wins!");
     }
 }
 function evens_vs_odds() {
