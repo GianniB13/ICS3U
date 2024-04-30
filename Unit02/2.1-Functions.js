@@ -1,9 +1,9 @@
 //Who are you task
 const prompt = require('prompt-sync')();
 //Finding their information
-let name = prompt("What is your name?")
-let age = prompt("How old are you?")
-let hobby = prompt("What is your favourtie hobby?")
+let name = prompt("What is your name?");
+let age = prompt("How old are you?");
+let hobby = prompt("What is your favourtie hobby?");
 //Printing code
 myFunction()
 
@@ -20,7 +20,7 @@ myFunction2()
 function myFunction2() {
     let tax = parseFloat(money * 0.13);
     let total = parseFloat(money + tax);
-    console.log("You paid "+total+" dollars total, "+tax+" dollars in tax.")
+    console.log("You paid "+total+" dollars total, "+tax+" dollars in tax.");
 
 }
 //Calculator Task

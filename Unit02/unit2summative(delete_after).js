@@ -38,6 +38,23 @@ console.log(military_to_standard(11, 45));
 console.log(military_to_standard(13, 50));
 
 // Start a game of Evens vs. Odds
+
+let difficulty = prompt("Would you like the difficulty to be easy, medium, or hard?");
+    if (difficulty == easy) {
+        console.log("You chose the easy difficulty.");
+    }
+    else if (difficulty == medium) {
+        console.log("You chose the medium difficulty.");
+    }
+    else (difficulty == hard); {
+        console.log("You chose the hard difficulty.");
+    }
+    
+
+
+
+
+
 let humanScore = 0;
 let computerScore = 0;
 
