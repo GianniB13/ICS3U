@@ -24,31 +24,16 @@ function discriminant(a, b, c) {
 console.log(discriminant(10, 20, 30));
 
 // Convert military time to standard time
-// H is hour and M is minute
 function military_to_standard(hour, minute) {
-    if (hour == 0) {
-        hour = 12;
-    } else if (hour > 12) {
-        hour = hour - 12;
+    if (hour <= 11 && minute <= 59){
+        return ("Already in standard time. " + hour + ":" + minute + " AM\n");
+      }
+    else if (hour > 12 && hour < 24 && minute <= 59){
+        let newHour = parseInt(hour) - 12;
+        return ("The time is in military time, this time in standard would be " + newHour + ":" + minute + " PM\n");
+        console.log(military_to_standard(13, 50));
     }
-    if (minute < 10) {
-        minute = "0" + minute;
-    }
-    let TOD;
-    if (hour < 12) {
-        TOD = "AM";
-    } else if (hour == 12) {
-        TOD = "PM";
-    } else {
-        TOD = "PM";
-    }
-    return hour + ":" + minute + " " + TOD;
 }
-
-console.log(military_to_standard(13, 50)); 
-
-
-  
 // Start a game of Evens vs. Odds
 let humanScore = 0;
 let computerScore = 0;
